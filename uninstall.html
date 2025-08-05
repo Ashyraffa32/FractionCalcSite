@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="FractionCalc is a free, open-source fraction calculator app made for students. No ads, just pure math. Download for Windows now!">
+    <meta name="keywords" content="fraction calculator, kalkulator pecahan, free math tool, open-source calculator, siswa SMP, edukasi">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="canonical" href="https://ashyraffa.github.io/FractionCalc">
+    <meta property="og:title" content="FractionCalc - Free and Open-Source Fraction Calculator">
+    <meta property="og:description" content="Free, open-source app for calculating fractions. Made by students, for students.">
+    <meta property="og:url" content="https://ashyraffa.github.io/FractionCalc/">
+    <meta property="og:type" content="website">
+    <title>Official FractionCalc Website</title>
+    <style>
+        @media (max-width: 768px) {
+            img {
+               width: 100%;
+               max-width: 330px;
+               object-fit: cover;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarNav" aria-controls="sidebarNav" aria-label="Toggle navigation" style="border-radius: 10px;">
+      <span class="navbar-toggler-icon">⇉</span>
+    </button>
+    <a href="index.html"><h1>FractionCalc</h1></a>
+    <!-- Desktop nav (hidden on mobile) -->
+    <nav class="d-none d-lg-block">
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link" href="downloads.html">Downloads</a>
+        </li>
+        <li class="nav-item">
+          <a href="https://github.com/Ashyraffa/FractionCalc" class="nav-link" target="_blank">GitHub</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="getstarted.html">Get Started</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/Ashyraffa/FractionCalc/discussions/categories/report-a-bug">Report A Bug</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+   <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebarNav" aria-labelledby="sidebarNavLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="sidebarNavLabel">FractionCalc</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <a class="nav-link" href="downloads.html">Downloads</a>
+        </li>
+        <li class="nav-item">
+          <a href="https://github.com/Ashyraffa/FractionCalc" class="nav-link" target="_blank">GitHub</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="getstarted.html">Get Started</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/Ashyraffa/FractionCalc/discussions/categories/report-a-bug">Report A Bug</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+   <br>
+   <main id="getstarted">
+    <h3>How to Uninstall FractionCalc??</h3>
+    <br>
+    <br>
+    <h4>First things first... Where you download FractionCalc??</h4>
+    <p>Did you download it on the <a href="index.html" style="color: #000000;">official website??</a></p>
+    <p>If not, i cannot help you. </p>
+    <br>
+    <br>
+    <br>
+    <h4>Uninstalling FractionCalc</h4>
+    <p>Depending the OS are you using, here's the way to uninstall FractionCalc:</p>
+    <br>
+    <br>
+    <h4>If you are using Windows:</h4>
+    <br>
+    <p>If you install it using the official installer, you can uninstall it like other apps.</p>
+    <p>Here's the way for Windows 11:</p>
+    <ul>
+        <li>Open the <b>Settings</b> App</li>
+        <li>Select <b>Apps</b>, then choose <b>Installed Apps.</b></li>
+        <li>Find <b>FractionCalc</b> on the list, click it and hit the <b>Uninstall</b> button.</li>
+    </ul>
+    <br>
+    <img src="photos/uninstall.png" alt="Uninstall">
+    <br>
+    <br>
+    <h4>If you are using Linux:</h4>
+    <br>
+    <p>If you install it using the official AppImage, you can uninstall it by deleting the file.</p>
+    <p>Here's the way:</p>
+    <ul>
+        <li>Open your File Manager.</li>
+        <li>Go to the folder where you downloaded FractionCalc.</li>
+        <li>Right-click on the <b>FractionCalc.AppImage</b> file and select <b>Delete</b>.</li>
+        <li>Alternatively, you can open a terminal and type <code>rm /path/to/FractionCalc.AppImage</code> to delete it.</li>
+    </ul>
+    <br>
+    <br>
+    <p>If you install it using the .deb installer, here's the way to uninstall:</p>
+    <ul>
+        <li>Open a terminal.</li>
+        <li>If you not sure for the app package name, type <code>dpkg -l | grep -i fractioncalc</code> to reveal the app package.</li>
+        <li>Type <code>sudo apt remove fractioncalc</code> and hit Enter.</li>
+        <li>Enter your password if prompted, and confirm the uninstallation.</li>
+    </ul>
+    <br>
+    <p>The options may different depending the distro you are using.</p>
+   </main>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</body>
+</html>

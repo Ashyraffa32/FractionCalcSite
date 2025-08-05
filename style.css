@@ -23,6 +23,11 @@ header a {
     text-decoration: none;
 }
 
+#getstarted {
+    padding: 20px 0;
+    padding-left: 15px;
+    padding-right: 15px;
+}
 
 .navbar-toggler {
     border: none;
