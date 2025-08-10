@@ -56,6 +56,25 @@ header a {
     gap: 35px;
 }
 
+#android {
+    text-align: center;
+}
+
+.androiddownload {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.androiddownload a > button {
+    border: none;
+    padding: 15px 20px;
+    color: #eee;
+    background: #666666;
+    border-radius: 13px;
+}
+
 #linux {
     text-align: center;
 }
