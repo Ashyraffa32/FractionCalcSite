@@ -1,103 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="FractionCalc is a free, open-source fraction calculator app made for students. No ads, just pure math. Download for Windows now!">
-    <meta name="keywords" content="fraction calculator, kalkulator pecahan, free math tool, open-source calculator, siswa SMP, edukasi">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <link rel="canonical" href="https://ashyraffa.github.io/FractionCalc">
-    <meta property="og:title" content="FractionCalc - Free and Open-Source Fraction Calculator">
-    <meta property="og:description" content="Free, open-source app for calculating fractions. Made by students, for students.">
-    <meta property="og:url" content="https://ashyraffa.github.io/FractionCalc/">
-    <meta property="og:type" content="website">
-    <title>Official FractionCalc Website</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="FractionCalc is a free, open-source fraction calculator app made for students. Download the latest or older versions for Windows, Linux, and Android.">
+  <title>FractionCalc Downloads</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-    <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarNav" aria-controls="sidebarNav" aria-label="Toggle navigation" style="border-radius: 10px;">
-      <span class="navbar-toggler-icon">⇉</span>
+  <!-- Navbar -->
+  <header class="navbar navbar-expand-lg navbar-light bg-light shadow-sm px-3">
+    <a href="index.html" class="navbar-brand fw-bold">FractionCalc</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
     </button>
-    <a href="index.html"><h1>FractionCalc</h1></a>
-    <!-- Desktop nav (hidden on mobile) -->
-    <nav class="d-none d-lg-block">
-      <ul class="nav">
-        <li class="nav-item">
-          <a class="nav-link" href="downloads.html">Downloads</a>
-        </li>
-        <li class="nav-item">
-          <a href="https://github.com/Ashyraffa/FractionCalc" class="nav-link" target="_blank">GitHub</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="getstarted.html">Get Started</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://github.com/Ashyraffa/FractionCalc/discussions/categories/report-a-bug">Report A Bug</a>
-        </li>
+    <nav class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="getstarted.html">Get Started</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://github.com/Ashyraffa/FractionCalc" target="_blank">GitHub Repo</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://github.com/Ashyraffa/FractionCalc/discussions/categories/report-a-bug" target="_blank">Report a Bug</a></li>
       </ul>
     </nav>
   </header>
 
-   <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebarNav" aria-labelledby="sidebarNavLabel">
-    <div class="offcanvas-header">
-      <h5 class="offcanvas-title" id="sidebarNavLabel">FractionCalc</h5>
-      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  <!-- Downloads Section -->
+  <main class="container my-5">
+    <h2 class="text-center mb-4">Download FractionCalc</h2>
+    <p class="text-center text-muted mb-5">Choose your platform below and grab the version you need.</p>
+
+    <!-- Tabs -->
+    <ul class="nav nav-tabs justify-content-center" id="downloadTabs" role="tablist">
+      <li class="nav-item">
+        <button class="nav-link active" id="windows-tab" data-bs-toggle="tab" data-bs-target="#windows" type="button">Windows</button>
+      </li>
+      <li class="nav-item">
+        <button class="nav-link" id="linux-tab" data-bs-toggle="tab" data-bs-target="#linux" type="button">Linux</button>
+      </li>
+      <li class="nav-item">
+        <button class="nav-link" id="android-tab" data-bs-toggle="tab" data-bs-target="#android" type="button">Android</button>
+      </li>
+    </ul>
+
+    <!-- Tab Content -->
+    <div class="tab-content mt-4">
+      <!-- Windows -->
+      <div class="tab-pane fade show active" id="windows">
+        <div class="row g-3">
+          <div class="col-md-4">
+            <div class="card shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">Version 1.3.1 (Latest)</h5>
+                <p class="card-text">Stable release with bug fixes and improvements.</p>
+                <a href="https://github.com/Ashyraffa/FractionCalc/releases/download/v1.3.1/FractionCalc.Setup.1.3.1.exe" class="btn btn-primary">Download</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">Older Versions</h5>
+                <ul class="list-unstyled small">
+                  <li><a href="https://github.com/Ashyraffa/FractionCalc/releases/download/v1.3.0/FractionCalc.Setup.1.3.0.exe">v1.3.0</a></li>
+                  <li><a href="https://github.com/Ashyraffa/FractionCalc/releases/download/v1.2.4/FractionCalc.Setup.1.2.4.exe">v1.2.4</a></li>
+                  <li><a href="https://github.com/Ashyraffa/FractionCalc/releases/download/v1.2.0/FractionCalc.Setup.1.2.0.exe">v1.2.0</a></li>
+                  <li><a href="https://github.com/Ashyraffa/FractionCalc/releases/download/v1.1.1/FractionCalc.Setup.1.1.1.exe">v1.1.1</a></li>
+                  <li><a href="https://github.com/Ashyraffa/FractionCalc/releases/download/v1.1/FractionCalc.Setup.1.1.0.exe">v1.1.0</a></li>
+                  <li><a href="https://github.com/Ashyraffa/FractionCalc/releases/download/v1.0.6/FractionCalc.Setup.1.0.6.exe">v1.0.6 (Beta)</a></li>
+                  <li><a href="https://github.com/Ashyraffa/FractionCalc/releases/download/v1.0.3/FractionCalc.Setup.1.0.3.exe">v1.0.3 (Beta)</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Linux -->
+      <div class="tab-pane fade" id="linux">
+        <div class="row g-3">
+          <div class="col-md-4">
+            <div class="card shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">Version 1.3.1</h5>
+                <p class="card-text">Available in .deb and AppImage formats.</p>
+                <a href="https://github.com/Ashyraffa/FractionCalc/releases/download/v1.3.1/fractioncalc_1.3.1_amd64.deb" class="btn btn-primary btn-sm">.deb</a>
+                <a href="https://github.com/Ashyraffa/FractionCalc/releases/download/v1.3.1/FractionCalc-1.3.1.AppImage" class="btn btn-outline-primary btn-sm">AppImage</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">Older Versions</h5>
+                <ul class="list-unstyled small">
+                  <li><a href="https://github.com/Ashyraffa/FractionCalc/releases/download/v1.3.0/fractioncalc_1.3.0_amd64.deb">v1.3.0 (.deb)</a></li>
+                  <li><a href="https://github.com/Ashyraffa/FractionCalc/releases/download/v1.3.0/FractionCalc-1.3.0.AppImage">v1.3.0 (.AppImage)</a></li>
+                  <li><a href="https://github.com/Ashyraffa/FractionCalc/releases/download/v1.2.4/fractioncalc_1.2.4_amd64.deb">v1.2.4 (.deb)</a></li>
+                  <li><a href="https://github.com/Ashyraffa/FractionCalc/releases/download/v1.2.4/FractionCalc-1.2.4.AppImage">v1.2.4 (AppImage)</a></li>
+                  <li><a href="https://github.com/Ashyraffa/FractionCalc/releases/download/v1.2.0/fractioncalc_1.2.0_amd64.deb">v1.2.0 (.deb)</a></li>
+                  <li><a href="https://github.com/Ashyraffa/FractionCalc/releases/download/v1.2.0/FractionCalc-1.2.0.AppImage">v1.2.0 (AppImage)</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Android -->
+      <div class="tab-pane fade" id="android">
+        <div class="row g-3">
+          <div class="col-md-4">
+            <div class="card shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">Version 1.3.1 (Latest)</h5>
+                <p class="card-text">Stable release with bug fixes and improvements.</p>
+                <a href="https://github.com/Ashyraffa/FractionCalc/releases/download/v1.3.1/FractionCalcv1.3.1.apk" class="btn btn-primary">Download</a>
+              </div>
+            </div>
+          </div>
+      </div>
     </div>
-    <div class="offcanvas-body">
-      <ul class="nav flex-column">
-        <li class="nav-item">
-          <a class="nav-link" href="downloads.html">Downloads</a>
-        </li>
-        <li class="nav-item">
-          <a href="https://github.com/Ashyraffa/FractionCalc" class="nav-link" target="_blank">GitHub</a>
-        </li>
-       <li class="nav-item">
-          <a class="nav-link" href="getstarted.html">Get Started</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://github.com/Ashyraffa/FractionCalc/discussions/categories/report-a-bug">Report A Bug</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-   <br>
-  <main style="padding-left: 20px;">
-    <h3>If you need the older versions of FractionCalc... you can download it here.</h3>
-    <br>
-    <h3>Download All Versions Of FractionCalc (For Windows)</h3>
-    <br>
-    <a href="https://github.com/Ashyraffa/FractionCalc/releases/download/v1.3.0/FractionCalc.Setup.1.3.0.exe">Download Version 1.3.0</a>
-    <br>
-      <a href="https://github.com/Ashyraffa/FractionCalc/releases/download/v1.2.4/FractionCalc.Setup.1.2.4.exe">Download Version 1.2.4</a>
-    <br>
-    <a href="https://github.com/Ashyraffa/FractionCalc/releases/download/v1.2.0/FractionCalc.Setup.1.2.0.exe">Download Version 1.2.0</a>
-    <br>
-    <a href="https://github.com/Ashyraffa/FractionCalc/releases/download/v1.1.1/FractionCalc.Setup.1.1.1.exe">Download Version 1.1.1</a>
-    <br>
-    <a href="https://github.com/Ashyraffa/FractionCalc/releases/download/v1.1/FractionCalc.Setup.1.1.0.exe">Download Version 1.1.0</a>
-    <br>
-    <a href="https://github.com/Ashyraffa/FractionCalc/releases/download/v1.0.6/FractionCalc.Setup.1.0.6.exe">Download Version 1.0.6 (Beta)</a>
-    <br>
-    <a href="https://github.com/Ashyraffa/FractionCalc/releases/download/v1.0.3/FractionCalc.Setup.1.0.3.exe">Download Version 1.0.3 (Beta)</a>
-    <br>
-    <br>
-    <i>Note: Beta Versions has many bugs that fixed in stable versions.</i>
-    <br><br><br><br>
-    <h3>Download All Versions Of FractionCalc (For Linux)</h3>
-    <br>
-    <a href="https://github.com/Ashyraffa/FractionCalc/releases/download/v1.3.0/fractioncalc_1.3.0_amd64.deb">Download Version 1.3.0 (.deb)</a>
-    <br>
-    <a href="https://github.com/Ashyraffa/FractionCalc/releases/download/v1.3.0/FractionCalc-1.3.0.AppImage">Download Version 1.3.0 (.AppImage)</a>
-    <br>
-    <a href=https://github.com/Ashyraffa/FractionCalc/releases/download/v1.2.4/fractioncalc_1.2.4_amd64.deb>Download Version 1.2.4 (.deb)</a>
-    <br>
-    <a href=https://github.com/Ashyraffa/FractionCalc/releases/download/v1.2.4/FractionCalc-1.2.4.AppImage>Download Version 1.2.4 (.AppImage)</a>
-    <br>
-    <a href="https://github.com/Ashyraffa/FractionCalc/releases/download/v1.2.0/fractioncalc_1.2.0_amd64.deb">Download Version 1.2.0 (.deb)</a>
-    <br>
-    <a href="https://github.com/Ashyraffa/FractionCalc/releases/download/v1.2.0/FractionCalc-1.2.0.AppImage">Download Version 1.2.0 (.AppImage)</a>
   </main>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+  <footer class="text-center py-4 text-muted border-top">
+    Made with <span class="text-danger">❤</span> by Ashyraffa
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

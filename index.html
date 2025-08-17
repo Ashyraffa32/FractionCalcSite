@@ -1,199 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="FractionCalc is a free, open-source fraction calculator app made for students. No ads, just pure math. Download for Windows now!">
-    <meta name="keywords" content="fraction calculator, kalkulator pecahan, free math tool, open-source calculator, siswa SMP, edukasi">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <link rel="canonical" href="https://ashyraffa.github.io/FractionCalc">
-    <meta property="og:title" content="FractionCalc - Free and Open-Source Fraction Calculator">
-    <meta property="og:description" content="Free, open-source app for calculating fractions. Made by students, for students.">
-    <meta property="og:url" content="https://ashyraffa.github.io/FractionCalc/">
-    <meta property="og:type" content="website">
-    <title>Official FractionCalc Website</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FractionCalc</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <header>
-    <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarNav" aria-controls="sidebarNav" aria-label="Toggle navigation" style="border-radius: 10px;">
-      <span class="navbar-toggler-icon">⇉</span>
-    </button>
-    <a href="index.html"><h1>FractionCalc</h1></a>
-    <!-- Desktop nav (hidden on mobile) -->
-    <nav class="d-none d-lg-block">
-      <ul class="nav">
-        <li class="nav-item">
-          <a class="nav-link" href="downloads.html">Downloads</a>
-        </li>
-        <li class="nav-item">
-          <a href="https://github.com/Ashyraffa/FractionCalc" class="nav-link" target="_blank">GitHub Repo</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="getstarted.html">Get Started</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://github.com/Ashyraffa/FractionCalc/discussions/categories/report-a-bug">Report A Bug</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+<body class="font-sans text-gray-800">
 
-   <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebarNav" aria-labelledby="sidebarNavLabel">
-    <div class="offcanvas-header">
-      <h5 class="offcanvas-title" id="sidebarNavLabel">FractionCalc</h5>
-      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-    </div>
-    <div class="offcanvas-body">
-      <ul class="nav flex-column">
-        <li class="nav-item">
-          <a class="nav-link" href="downloads.html">Downloads</a>
-        </li>
-        <li class="nav-item">
-          <a href="https://github.com/Ashyraffa/FractionCalc" class="nav-link" target="_blank">GitHub Repo</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://github.com/Ashyraffa/FractionCalc/discussions/categories/report-a-bug">Report A Bug</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="getstarted.html">Get Started</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-
-  <main>
-    <br>
-    <section id="maincontent">
-    <img src="photos/demo1.png" alt="1st Demo">
-    <div class="firstcontent">
-        <h2>FractionCalc</h2>
-        <br>
-        <p>FractionCalc is a free and open-source fraction calculator that was made in hope to help students, especially middle-schoolers to learn math, especially fractions and decimals.</p>
-        <a href="https://github.com/Ashyraffa/FractionCalc/releases/download/v1.3.0/FractionCalc.Setup.1.3.0.exe"><button>Download for Windows</button></a>
-        <label>v1.3.0, For Windows 10 or later (64-bit)</label>
-    </div>
-    </section>
-    <br>
-    <br>
-    <section id="android">
-      <h2>NOW ON MOBILE!!</h2>
-      <br>
-      <p>FractionCalc is now available on Android! Download the latest version here.</p>
-      <br>
-      <p>Because the mobile version is still in beta, so expect bugs in the app.</p>
-      <div class="androiddownload">
-        <a href="https://github.com/Ashyraffa/FractionCalc/releases/download/v1.3.0/FractionCalcv1.3.0.apk"><button>Download for Android</button></a>
-      </div>
-      <br>
-      <p>You have to sideload the .apk given to your phone in order to install.</p>
-      <p>Make sure to enable "Install from unknown sources" in your phone's settings.</p>
-      <p>(Requires Android 6.0 or later)</p>
-    </section>
-    <br>
-    <br>
-    <section id="linux">
-        <h2>Linux Version?</h2>
-        <br>
-        <p>FractionCalc is now available for Linux! Download the latest version here.</p>
-        <div class="linuxdownload">
-          <a href="https://github.com/Ashyraffa/FractionCalc/releases/download/v1.3.0/fractioncalc_1.3.0_amd64.deb"><button>Download .deb (v1.2.4)</button></a>
-          <a href="https://github.com/Ashyraffa/FractionCalc/releases/download/v1.3.0/FractionCalc-1.3.0.AppImage"><button>Download .AppImage (v1.2.4)</button></a>
+  <!-- Navbar -->
+  <nav class="bg-white shadow">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <!-- Logo -->
+        <div class="flex items-center space-x-2">
+          <img src="photos/fractioncalc.png" class="w-8 h-8" alt="Logo"/>
+          <span class="font-bold text-lg">FractionCalc</span>
         </div>
-        <label>For Ubuntu/Debian based distros, use .deb installer, for another distro, use .AppImage</label>
-    </section>
-    <br>
-    <br>
-    <section id="secondcontent">
-      <div class="secondcontent">
-        <h2>Simple, Fast and Powerful.</h2>
-        <br>
-        <ul>
-          <li>Convert to decimal to fraction, or vice versa quickly.</li>
-          <li>Calculate up to 4 fractions at once blazingly fast</li>
-          <li>Completely Free, no ads, spyware, or user tracking.</li>
-          <li>Open-Source, so you can fork it and modify it as much as you want.</li>
-        </ul>
-      </div>
-      <img src="photos/demo2.png" alt="2nd Demo">
-    </section>
-    <br>
-    <br>
-    <section id="thirdcontent">
-      <div class="thirdcontent">
-      <h2>FAQs:</h2>
-      <br>
-      <div class="accordion" id="accordionExample">
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-        Windows Defender or SmartScreen flags this software. Is this safe?
-      </button>
-    </h2>
-    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-         <strong>Yes, it's totally safe!</strong><br><br>
-
-      This is a <b>false positive</b>. FractionCalc isn't signed with an expensive code certificate (yet), which can make Windows Defender or SmartScreen warn you.
-
-      <br><br>
-      But rest assured:
-      <ul>
-        <li>✅ No ads, no tracking</li>
-        <li>✅ 100% open-source — you can read the code on GitHub</li>
-        <li>✅ Doesn’t access the internet or touch your files</li>
-      </ul>
-
-      <b>How to continue:</b><br>
-      When you see the warning:
-      <ol>
-        <li>Click <b>"More info"</b></li>
-        <li>Then click <b>"Run anyway"</b></li>
-      </ol>
-
-      That’s it — you’re good to go. Enjoy the app!
+        <!-- Desktop Links -->
+        <div class="hidden md:flex space-x-6 text-sm">
+          <a href="https://github.com/Ashyraffa/FractionCalc/" class="hover:text-blue-600">GitHub Repo</a>
+          <a href="getstarted.html" class="hover:text-blue-600">Get Started</a>
+          <a href="downloads.html" class="px-4 py-2 rounded-lg bg-blue-500 text-white hover:bg-blue-600">Download</a>
+        </div>
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden">
+          <button id="menu-btn" class="p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+            ☰
+          </button>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-        Did i need to give a credit when sharing the source code or modify it??
-      </button>
-    </h2>
-    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        <strong>Yes, in fact you have to do so.</strong> FractionCalc is protected by <a href="https://www.gnu.org/licenses/gpl-3.0.en.html#license-text" style="color: #333333;" target="_blank">GNU GPL-3.0 license.</a> I kindly ask for permissions and credits for this project to be modified<br>
-        and shared. Any pull requests that attempt to remove the credits of the developer itself (in this case it's me) will be <b>rejected and banned.</b>
-      </div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden px-4 pb-4 space-y-2">
+      <a href="#" class="block hover:text-blue-600">GitHub Repo</a>
+      <a href="#" class="block hover:text-blue-600">Get Started</a>
+      <a href="downloads.html" class="block px-4 py-2 rounded-lg bg-blue-500 text-white hover:bg-blue-600">Download</a>
     </div>
-  </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-        Can i contribute???
-      </button>
-    </h2>
-    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        <strong>Of course you can!</strong> Go to the GitHub repo of this project, fork it, clone it, make your changes, open an issue, and create a pull request!
-      </div>
-    </div>
-  </div>
-</div>
-      </div>
-    </section>
-    <br>
-    <br>
-    <section id="fourthcontent">
-      <p>Download the source code <a href="https://github.com/Ashyraffa/FractionCalc/archive/refs/tags/v1.2.0.tar.gz">here.</a> (tar.gz)</p>
-    </section>
-  </main>
+  </nav>
 
-  <footer>
-    <p>Made by <a href="https://ashyraffa.github.io/Personal-Website">Ashyraffa.</a></p>
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-r from-green-200 via-blue-200 to-purple-200 py-16 px-6 text-center">
+    <h1 class="text-3xl md:text-5xl font-bold mb-6 leading-snug">Do Less to Calculate Fractions.</h1>
+    <a href="https://github.com/Ashyraffa/FractionCalc/releases/download/v1.3.1/FractionCalc.Setup.1.3.1.exe" 
+       class="inline-block px-6 py-3 border border-blue-500 rounded-lg text-blue-500 hover:bg-blue-500 hover:text-white transition">
+       Download for Windows 10/11 64-bit
+    </a>
+    <p class="mt-4">
+      <a href="downloads.html" class="text-blue-700 underline hover:text-blue-900">Other platforms? Click here.</a>
+    </p>
+    <div class="mt-10 flex justify-center">
+      <img src="photos/demo1.png" class="rounded-lg shadow-lg max-w-full h-auto" alt="App Screenshot"/>
+    </div>
+  </section>
+
+  <!-- Secondary Section -->
+  <section class="bg-gradient-to-r from-green-200 via-blue-200 to-purple-200 py-16 px-6 text-center">
+    <h2 class="text-2xl md:text-4xl font-bold mb-6">Goodbye Traditional Books, Hello FractionCalc.</h2>
+    <p class="text-2xl md:text-2xl">See why FractionCalc is good for students, especially on math</p>
+    <br>
+    <a href="whyfractioncalc.html" class="inline-block px-6 py-3 border border-blue-500 rounded-lg text-blue-500 hover:bg-blue-500 hover:text-white transition">Learn More</a>
+    <div class="mt-10 flex flex-col md:flex-row justify-center gap-6">
+      <img src="photos/laptopdemo.png" class="rounded-lg shadow-lg max-w-full h-auto" alt="Laptop View"/>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-100 py-10 mt-10">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left text-sm px-6">
+      <div>
+        <h3 class="font-bold mb-2">Downloads:</h3>
+        <p>FractionCalc for Windows</p>
+        <p>FractionCalc for Linux</p>
+        <p>FractionCalc for Android</p>
+      </div>
+      <div>
+        <h3 class="font-bold mb-2">About:</h3>
+        <p><a href="https://github.com/Ashyraffa/FractionCalc/" class="hover:text-blue-600">GitHub Repository</a></p>
+        <p><a href="getstarted.html" class="hover:text-blue-600">Documentation</a></p>
+      </div>
+      <div>
+        <h3 class="font-bold mb-2">Help:</h3>
+        <p><a href="getstarted.html" class="hover:text-blue-600">Get Started</a></p>
+        <p><a href="https://github.com/Ashyraffa/FractionCalc/discussions" class="hover:text-blue-600">Report an Issue/Bug</a></p>
+      </div>
+    </div>
+    <div class="max-w-6xl mx-auto text-center text-sm text-gray-600 px-6">
+      <p>Made with <span class="text-red-500">❤</span> by Ashyraffa</p>
+      <p class="mt-2">
+        <a href="downloads.html" class="hover:text-blue-600">Downloads</a> · 
+        <a href="getstarted.html" class="hover:text-blue-600">Docs</a> · 
+        <a href="https://github.com/Ashyraffa/FractionCalc" target="_blank" class="hover:text-blue-600">GitHub</a>
+      </p>
+    </div>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  <!-- Script for mobile menu -->
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+
 </body>
 </html>

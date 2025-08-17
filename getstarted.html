@@ -1,86 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="FractionCalc is a free, open-source fraction calculator app made for students. No ads, just pure math. Download for Windows now!">
-    <meta name="keywords" content="fraction calculator, kalkulator pecahan, free math tool, open-source calculator, siswa SMP, edukasi">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <link rel="canonical" href="https://ashyraffa.github.io/FractionCalc">
-    <meta property="og:title" content="FractionCalc - Free and Open-Source Fraction Calculator">
-    <meta property="og:description" content="Free, open-source app for calculating fractions. Made by students, for students.">
-    <meta property="og:url" content="https://ashyraffa.github.io/FractionCalc/">
-    <meta property="og:type" content="website">
-    <title>Official FractionCalc Website</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="FractionCalc is a free, open-source fraction calculator app made for students. No ads, just pure math. Learn how to get started.">
+  <title>Get Started - FractionCalc</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-    <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarNav" aria-controls="sidebarNav" aria-label="Toggle navigation" style="border-radius: 10px;">
-      <span class="navbar-toggler-icon">⇉</span>
+  <!-- Navbar -->
+  <header class="navbar navbar-expand-lg navbar-light bg-light shadow-sm px-3">
+    <a href="index.html" class="navbar-brand fw-bold">FractionCalc</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
     </button>
-    <a href="index.html"><h1>FractionCalc</h1></a>
-    <!-- Desktop nav (hidden on mobile) -->
-    <nav class="d-none d-lg-block">
-      <ul class="nav">
-        <li class="nav-item">
-          <a class="nav-link" href="downloads.html">Downloads</a>
-        </li>
-        <li class="nav-item">
-          <a href="https://github.com/Ashyraffa/FractionCalc" class="nav-link" target="_blank">GitHub</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="getstarted.html">Get Started</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://github.com/Ashyraffa/FractionCalc/discussions/categories/report-a-bug">Report A Bug</a>
-        </li>
+    <nav class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="downloads.html">Downloads</a></li>
+        <li class="nav-item"><a class="nav-link active" href="getstarted.html">Get Started</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://github.com/Ashyraffa/FractionCalc" target="_blank">GitHub</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://github.com/Ashyraffa/FractionCalc/discussions/categories/report-a-bug" target="_blank">Report a Bug</a></li>
       </ul>
     </nav>
   </header>
 
-   <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebarNav" aria-labelledby="sidebarNavLabel">
-    <div class="offcanvas-header">
-      <h5 class="offcanvas-title" id="sidebarNavLabel">FractionCalc</h5>
-      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  <!-- Hero -->
+  <section class="bg-light py-5 text-center">
+    <div class="container">
+      <h1 class="fw-bold">Get Started with FractionCalc</h1>
+      <p class="text-muted">Your free, open-source fraction calculator. Fast, offline, and easy to use.</p>
     </div>
-    <div class="offcanvas-body">
-      <ul class="nav flex-column">
-        <li class="nav-item">
-          <a class="nav-link" href="downloads.html">Downloads</a>
-        </li>
-        <li class="nav-item">
-          <a href="https://github.com/Ashyraffa/FractionCalc" class="nav-link" target="_blank">GitHub</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="getstarted.html">Get Started</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://github.com/Ashyraffa/FractionCalc/discussions/categories/report-a-bug">Report A Bug</a>
-        </li>
-      </ul>
+  </section>
+
+  <!-- Main Content -->
+  <main class="container my-5">
+    <!-- Quick Intro -->
+    <div class="alert alert-info">
+      <strong>Note:</strong> Starting from <b>version 1.2.4</b>, personalization options were moved to the <b>Options</b> menu in the Ribbon.
     </div>
-  </div>
-   <br>
-   <main id="getstarted">
-    <h2>Get Started</h2>
-    <br>
-    <p>FractionCalc is a free Fraction Calculator for Windows and Linux. It's fast, offline, and open-source.</p>
-    <br>
-    <section id="documentation">
-        <h3>Documentation:</h3>
-        <br>
-        <p><b>CAUTION!</b> in version 1.2.4 or later, personalization options were moved to the "Option" menu in the Ribbon.</p>
-        <br>
-        <a href="darkmode.html">How to enable Dark Mode</a>
-        <br>
-        <a href="changebackground.html">How to Change the Background</a>
-        <br>
-        <a href="resetbackground.html">How to Reset the Background to Default</a>
-        <br>
-        <a href="uninstall.html">Uninstalling FractionCalc</a>
-    </section>
-   </main>
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+    <!-- Documentation Cards -->
+    <h2 class="mb-4">Documentation</h2>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">Dark Mode</h5>
+            <p class="card-text">Switch to a darker theme to reduce eye strain during long study sessions.</p>
+            <a href="darkmode.html" class="btn btn-outline-primary btn-sm">Learn How</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">Change Background</h5>
+            <p class="card-text">Customize the app background with your favorite images.</p>
+            <a href="changebackground.html" class="btn btn-outline-primary btn-sm">Learn How</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">Reset Background</h5>
+            <p class="card-text">Quickly reset the app background to its original default style.</p>
+            <a href="resetbackground.html" class="btn btn-outline-primary btn-sm">Learn How</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">Uninstalling</h5>
+            <p class="card-text">Step-by-step instructions to completely remove FractionCalc from your device.</p>
+            <a href="uninstall.html" class="btn btn-outline-danger btn-sm">Uninstall Guide</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">How to Install</h5>
+            <p class="card-text">Instructions to install FractionCalc on your device.</p>
+            <a href="install.html" class="btn btn-outline-primary btn-sm">Install Guide</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-center py-4 text-muted border-top">
+    Made with <span class="text-danger">❤</span> by Ashyraffa
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

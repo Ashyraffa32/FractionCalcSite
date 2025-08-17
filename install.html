@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn how to install FractionCalc on Windows, Linux, and Android.">
+  <title>Install FractionCalc - Docs</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar navbar-expand-lg navbar-light bg-light shadow-sm px-3">
+    <a href="index.html" class="navbar-brand fw-bold">FractionCalc</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <nav class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="downloads.html">Downloads</a></li>
+        <li class="nav-item"><a class="nav-link" href="getstarted.html">Get Started</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://github.com/Ashyraffa/FractionCalc" target="_blank">GitHub</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://github.com/Ashyraffa/FractionCalc/discussions/categories/report-a-bug" target="_blank">Report a Bug</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="bg-light py-5 text-center">
+    <div class="container">
+      <h1 class="fw-bold">Installation Guide</h1>
+      <p class="text-muted">Step-by-step instructions to install FractionCalc on Windows, Linux, and Android (sideload).</p>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main class="container my-5">
+    <!-- Windows -->
+    <section class="mb-5">
+      <h2 class="fw-bold">Windows</h2>
+      <p>To install FractionCalc on Windows (10/11, 64-bit):</p>
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title">Steps</h5>
+          <ol>
+            <li>Download the latest installer from the <a href="downloads.html">Downloads page</a>.</li>
+            <li>Open the <code>FractionCalc.Setup.exe</code> file.</li>
+            <li>Follow the installer instructions.</li>
+            <li>Once finished, FractionCalc will be available in your Start Menu.</li>
+          </ol>
+          <div class="alert alert-info mt-3">
+            <strong>Tip:</strong> You may need administrator privileges to complete installation.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Linux -->
+    <section class="mb-5">
+      <h2 class="fw-bold">Linux</h2>
+      <p>FractionCalc supports both <b>.deb packages</b> and <b>AppImage</b> formats.</p>
+      <div class="row g-4">
+        <!-- DEB -->
+        <div class="col-md-6">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">.deb Package</h5>
+              <ol>
+                <li>Download the <code>.deb</code> file from the <a href="downloads.html">Downloads page</a>.</li>
+                <li>Open a terminal and run:<br>
+                  <code>sudo dpkg -i fractioncalc_x.x.x_amd64.deb</code>
+                </li>
+                <li>If dependencies are missing, fix them with:<br>
+                  <code>sudo apt --fix-broken install</code>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+        <!-- AppImage -->
+        <div class="col-md-6">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">AppImage</h5>
+              <ol>
+                <li>Download the <code>.AppImage</code> file from the <a href="downloads.html">Downloads page</a>.</li>
+                <li>Make it executable:<br>
+                  <code>chmod +x FractionCalc-x.x.x.AppImage</code>
+                </li>
+                <li>Run the file by double-clicking or from terminal:<br>
+                  <code>./FractionCalc-x.x.x.AppImage</code>
+                </li>
+              </ol>
+              <div class="alert alert-info mt-3">
+                <strong>Note:</strong> AppImage requires no installation and runs standalone.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Android -->
+    <section>
+      <h2 class="fw-bold">Android (Sideload APK)</h2>
+      <p>Since FractionCalc is not available on the Play Store, you’ll need to sideload it via APK:</p>
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title">Steps</h5>
+          <ol>
+            <li>Download the latest <code>.apk</code> file from the <a href="downloads.html">Downloads page</a>.</li>
+            <li>On your Android device, open <b>Settings</b> → <b>Security</b>.</li>
+            <li>Enable <b>Install Unknown Apps</b> (varies by device).</li>
+            <li>Locate the downloaded APK (via your browser’s downloads or file manager).</li>
+            <li>Tap the APK file and confirm installation.</li>
+          </ol>
+          <div class="alert alert-warning mt-3">
+            <strong>Warning:</strong> Only install APKs from trusted sources. Use the official FractionCalc website to avoid security risks.
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-center py-4 text-muted border-top">
+    Made with <span class="text-danger">❤</span> by Ashyraffa
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
