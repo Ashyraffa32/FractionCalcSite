@@ -62,7 +62,49 @@
       </div>
     </section>
 
-  
+     <section class="mb-5">
+      <h2 class="fw-bold">Linux</h2>
+      <p>FractionCalc supports both <b>.deb packages</b> and <b>AppImage</b> formats.</p>
+      <div class="row g-4">
+        <!-- DEB -->
+        <div class="col-md-6">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">.deb Package</h5>
+              <ol>
+                <li>Download the <code>.deb</code> file from the <a href="downloads.html">Downloads page</a>.</li>
+                <li>Open a terminal and run:<br>
+                  <code>sudo dpkg -i fractioncalc_x.x.x_amd64.deb</code>
+                </li>
+                <li>If dependencies are missing, fix them with:<br>
+                  <code>sudo apt --fix-broken install</code>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+        <!-- AppImage -->
+        <div class="col-md-6">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">AppImage</h5>
+              <ol>
+                <li>Download the <code>.AppImage</code> file from the <a href="downloads.html">Downloads page</a>.</li>
+                <li>Make it executable:<br>
+                  <code>chmod +x FractionCalc-x.x.x.AppImage</code>
+                </li>
+                <li>Run the file by double-clicking or from terminal:<br>
+                  <code>./FractionCalc-x.x.x.AppImage</code>
+                </li>
+              </ol>
+              <div class="alert alert-info mt-3">
+                <strong>Note:</strong> AppImage requires no installation and runs standalone.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Android -->
     <section>
