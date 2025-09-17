@@ -91,13 +91,64 @@
     </div>
   </footer>
 
-  <!-- Script for mobile menu -->
+  <!-- Script for mobile menu and translation -->
   <script>
     const menuBtn = document.getElementById('menu-btn');
     const mobileMenu = document.getElementById('mobile-menu');
     menuBtn.addEventListener('click', () => {
       mobileMenu.classList.toggle('hidden');
     });
+
+    // FAQ translations
+    const translations = {
+      'FractionCalc': 'KalkulatorPecahan',
+      'Home': 'Beranda',
+      'Downloads': 'Unduhan',
+      'Get Started': 'Mulai',
+      'GitHub': 'GitHub',
+      'Frequently Asked Questions': 'Pertanyaan yang Sering Diajukan',
+      'Google Play Protect block this app and said this is a "malware". is that true??': 'Google Play Protect memblokir aplikasi ini dan mengatakan ini "malware". Apakah benar?',
+      'No, no. it was a false positive because we distribute our app independently. You can check the source code on our GitHub repo here to see if our app was safe or not.': 'Tidak, itu hanya false positive karena kami mendistribusikan aplikasi secara mandiri. Anda bisa cek kode sumber di GitHub kami di sini untuk memastikan keamanan aplikasi.',
+      'Windows Defender flagged this software. it is safe??': 'Windows Defender menandai perangkat lunak ini. Apakah aman?',
+      'It was a false positive because our app wasnt signed with a certificate. the app is open-source so you can see the code for yourself.': 'Itu false positive karena aplikasi kami tidak ditandatangani sertifikat. Aplikasi ini open-source, jadi Anda bisa cek sendiri kodenya.',
+      'Is FractionCalc open-source?': 'Apakah KalkulatorPecahan open-source?',
+      'Yes! You can view and contribute to the source code on our GitHub repository.': 'Ya! Anda dapat melihat dan berkontribusi pada kode sumber di repositori GitHub kami.',
+      'Does FractionCalc require an internet connection?': 'Apakah KalkulatorPecahan membutuhkan koneksi internet?',
+      'No. FractionCalc works completely offline, so you can use it anywhere, anytime.': 'Tidak. KalkulatorPecahan bekerja sepenuhnya offline, jadi bisa digunakan di mana saja, kapan saja.',
+      'Who made FractionCalc?': 'Siapa pembuat KalkulatorPecahan?',
+      'FractionCalc was made by Ashyraffa and Ratu, It’s built to make math easier and more approachable, without ads or distractions.': 'KalkulatorPecahan dibuat oleh Ashyraffa dan Ratu, dirancang untuk memudahkan matematika tanpa iklan atau gangguan.',
+      'Where can I download FractionCalc?': 'Di mana saya bisa mengunduh KalkulatorPecahan?',
+      'You can download FractionCalc for your Windows, Linux or Android device from the Downloads page.': 'Anda dapat mengunduh KalkulatorPecahan untuk perangkat Windows, Linux, atau Android Anda di halaman Unduhan.',
+      'Made with': 'Dibuat dengan',
+      'by Ashyraffa and Ratu': 'oleh Ashyraffa dan Ratu',
+      'Docs': 'Dokumentasi'
+    };
+    const reverseTranslations = Object.fromEntries(Object.entries(translations).map(([en, id]) => [id, en]));
+
+    function translatePage(toIndonesian) {
+      document.querySelectorAll('span,a,h1,h2,h3,h5,p,button,li').forEach(el => {
+        const txt = el.textContent.trim();
+        if (toIndonesian && translations[txt]) el.textContent = translations[txt];
+        if (!toIndonesian && reverseTranslations[txt]) el.textContent = reverseTranslations[txt];
+      });
+      if (document.getElementById('translate-btn')) document.getElementById('translate-btn').textContent = toIndonesian ? 'English' : 'Bahasa Indonesia';
+      if (document.getElementById('translate-btn-mobile')) document.getElementById('translate-btn-mobile').textContent = toIndonesian ? 'English' : 'Bahasa Indonesia';
+    }
+
+    function handleTranslateClick() {
+      const toIndonesian = this.textContent === 'Bahasa Indonesia';
+      localStorage.setItem('lang', toIndonesian ? 'id' : 'en');
+      translatePage(toIndonesian);
+    }
+
+    if (document.getElementById('translate-btn')) document.getElementById('translate-btn').onclick = handleTranslateClick;
+    if (document.getElementById('translate-btn-mobile')) document.getElementById('translate-btn-mobile').onclick = handleTranslateClick;
+
+    window.addEventListener('DOMContentLoaded', () => {
+      const lang = localStorage.getItem('lang') || 'en';
+      translatePage(lang === 'id');
+    });
   </script>
 
 </body>
+</html>
