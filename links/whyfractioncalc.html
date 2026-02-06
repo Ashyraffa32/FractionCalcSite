@@ -12,12 +12,12 @@
   <!-- Navbar -->
   <nav class="flex items-center justify-between px-4 md:px-8 py-4 shadow bg-white sticky top-0 z-50">
     <div class="flex items-center space-x-2">
-      <img src="photos/fractioncalc.png" class="w-7 h-7" alt="Logo"/>
+      <img src="../photos/fractioncalc.png" class="w-7 h-7" alt="Logo"/>
       <span class="font-bold text-lg">FractionCalc</span>
     </div>
     <!-- Desktop Nav -->
     <div class="hidden md:flex items-center space-x-6 text-sm">
-      <a href="index.html" class="hover:text-blue-600">Home</a>
+      <a href="../index.html" class="hover:text-blue-600">Home</a>
       <a href="downloads.html" class="hover:text-blue-600">Downloads</a>
       <a href="getstarted.html" class="hover:text-blue-600">Get Started</a>
       <a href="https://github.com/Ashyraffa/FractionCalc" target="_blank" class="hover:text-blue-600">GitHub</a>
@@ -31,7 +31,7 @@
   </nav>
   <!-- Mobile Menu -->
   <div id="mobile-menu" class="hidden md:hidden bg-white shadow px-4 py-3 space-y-2">
-    <a href="index.html" class="block hover:text-blue-600">Home</a>
+    <a href="../index.html" class="block hover:text-blue-600">Home</a>
     <a href="downloads.html" class="block hover:text-blue-600">Downloads</a>
     <a href="getstarted.html" class="block hover:text-blue-600">Get Started</a>
     <a href="https://github.com/Ashyraffa/FractionCalc" target="_blank" class="block hover:text-blue-600">GitHub</a>
@@ -43,7 +43,7 @@
     <p class="text-base md:text-xl max-w-2xl mx-auto text-gray-700">See why FractionCalc is the perfect companion for students learning fractions — faster, easier, and more fun than traditional methods.</p>
     <a href="downloads.html" class="mt-6 inline-block px-6 py-3 border border-blue-500 rounded-lg text-blue-500 hover:bg-blue-500 hover:text-white transition">Download Now</a>
     <div class="mt-10 flex justify-center">
-      <img src="photos/laptopdemo.png" class="rounded-lg shadow-lg max-w-full h-auto md:max-w-3xl" alt="Laptop View"/>
+      <img src="../photos/laptopdemo.png" class="rounded-lg shadow-lg max-w-full h-auto md:max-w-3xl" alt="Laptop View"/>
     </div>
   </section>
 
@@ -89,64 +89,7 @@
     </div>
   </footer>
 
-  <!-- Script for mobile menu and translation -->
-  <script>
-    const menuBtn = document.getElementById('menu-btn');
-    const mobileMenu = document.getElementById('mobile-menu');
-    menuBtn.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
-    });
-
-    // Why FractionCalc translations
-    const translations = {
-      'FractionCalc': 'KalkulatorPecahan',
-      'Home': 'Beranda',
-      'Downloads': 'Unduhan',
-      'Get Started': 'Mulai',
-      'GitHub': 'GitHub',
-      'Goodbye Manual Way, Hello FractionCalc.': 'Selamat Tinggal Cara Manual, Selamat Datang KalkulatorPecahan.',
-      'See why FractionCalc is the perfect companion for students learning fractions — faster, easier, and more fun than traditional methods.': 'Lihat mengapa KalkulatorPecahan adalah teman sempurna untuk pelajar yang belajar pecahan — lebih cepat, mudah, dan menyenangkan daripada cara tradisional.',
-      'Download Now': 'Unduh Sekarang',
-      'Why Students Love FractionCalc': 'Mengapa Siswa Menyukai KalkulatorPecahan',
-      '⚡ Save Time': '⚡ Hemat Waktu',
-      'Skip the long manual calculations. Solve fraction problems instantly and check your answers in seconds.': 'Lewati perhitungan manual yang panjang. Selesaikan soal pecahan secara instan dan cek jawaban dalam hitungan detik.',
-      '👩‍💻 Open-Source': '👩‍💻 Open-Source',
-      'You can check the source code on the GitHub repo of this software.': 'Anda dapat memeriksa kode sumber di repo GitHub perangkat lunak ini.',
-      '📴 Works Offline': '📴 Berfungsi Offline',
-      'No internet? No problem. FractionCalc is a lightweight desktop and mobile app that works anywhere.': 'Tidak ada internet? Tidak masalah. KalkulatorPecahan adalah aplikasi desktop dan mobile ringan yang berfungsi di mana saja.',
-      'Made for Students, By Students': 'Dibuat untuk Siswa, oleh Siswa',
-      'FractionCalc was built with one goal in mind: to make math easier and more approachable. No ads, no distractions, just pure math power in your hands.': 'KalkulatorPecahan dibuat dengan satu tujuan: membuat matematika lebih mudah dan ramah. Tanpa iklan, tanpa gangguan, hanya kekuatan matematika murni di tangan Anda.',
-      'Get Started': 'Mulai',
-      'Made with': 'Dibuat dengan',
-      'by Ashyraffa and Ratu': 'oleh Ashyraffa dan Ratu',
-      'Docs': 'Dokumentasi'
-    };
-    const reverseTranslations = Object.fromEntries(Object.entries(translations).map(([en, id]) => [id, en]));
-
-    function translatePage(toIndonesian) {
-      document.querySelectorAll('span,a,h1,h2,h3,h5,p,button,li').forEach(el => {
-        const txt = el.textContent.trim();
-        if (toIndonesian && translations[txt]) el.textContent = translations[txt];
-        if (!toIndonesian && reverseTranslations[txt]) el.textContent = reverseTranslations[txt];
-      });
-      if (document.getElementById('translate-btn')) document.getElementById('translate-btn').textContent = toIndonesian ? 'English' : 'Bahasa Indonesia';
-      if (document.getElementById('translate-btn-mobile')) document.getElementById('translate-btn-mobile').textContent = toIndonesian ? 'English' : 'Bahasa Indonesia';
-    }
-
-    function handleTranslateClick() {
-      const toIndonesian = this.textContent === 'Bahasa Indonesia';
-      localStorage.setItem('lang', toIndonesian ? 'id' : 'en');
-      translatePage(toIndonesian);
-    }
-
-    if (document.getElementById('translate-btn')) document.getElementById('translate-btn').onclick = handleTranslateClick;
-    if (document.getElementById('translate-btn-mobile')) document.getElementById('translate-btn-mobile').onclick = handleTranslateClick;
-
-    window.addEventListener('DOMContentLoaded', () => {
-      const lang = localStorage.getItem('lang') || 'en';
-      translatePage(lang === 'id');
-    });
-  </script>
+  <script src="files/script.js"></script>
 
 </body>
 </html>
