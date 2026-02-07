@@ -57,10 +57,7 @@
         <div class="card-body">
           <h5 class="card-title">Steps for Windows 11</h5>
           <ol>
-            <li>Open the <b>Settings</b> app.</li>
-            <li>Select <b>Apps</b> → <b>Installed Apps</b>.</li>
-            <li>Find <b>FractionCalc</b> in the list.</li>
-            <li>Click it and press <b>Uninstall</b>.</li>
+            <li>Just delete the file (for v2.0.0 or newer), because FractionCalc is portabe.</li>
           </ol>
         </div>
       </div>
@@ -86,34 +83,12 @@
               <ol>
                 <li>Open your file manager.</li>
                 <li>Locate <code>FractionCalc.AppImage</code>.</li>
-                <li>Right-click → <b>Delete</b>.</li>
-                <li>Or, open a terminal and run:<br>
-                  <code>rm /path/to/FractionCalc.AppImage</code>
-                </li>
+                <li>Just delete it. done.</li>
               </ol>
             </div>
           </div>
         </div>
 
-        <!-- DEB -->
-        <div class="col-md-6">
-          <div class="card h-100 shadow-sm">
-            <div class="card-body">
-              <h5 class="card-title">.deb Package</h5>
-              <p>If you installed FractionCalc with the <code>.deb</code> package:</p>
-              <ol>
-                <li>Open a terminal.</li>
-                <li>Check the package name:<br>
-                  <code>dpkg -l | grep -i fractioncalc</code>
-                </li>
-                <li>Remove it:<br>
-                  <code>sudo apt remove fractioncalc</code>
-                </li>
-                <li>Enter your password and confirm.</li>
-              </ol>
-              <div class="alert alert-info mt-3">
-                <strong>Note:</strong> Commands may vary slightly depending on your Linux distro.
-              </div>
             </div>
           </div>
         </div>
@@ -144,7 +119,7 @@
 
   <!-- Footer -->
   <footer class="text-center py-4 text-muted border-top">
-    Made with <span class="text-danger">❤</span> by Ashyraffa and Ratu
+    Made with <span class="text-danger">❤</span> by Ashyraffa
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
